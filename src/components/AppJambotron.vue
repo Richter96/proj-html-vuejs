@@ -17,6 +17,9 @@ export default {
             <h1>The biggest platform for your growth.</h1>
             <p>There are many varlations of passages of Lorem Ipsum available, but the majority have suffered alteration in
                 some form</p>
+
+            <button class="btn btn-primary px-3 ">Read More</button>
+
         </div>
         <div class="col_60">
             <img src="../assets/img/508.jpeg" alt="">
@@ -25,11 +28,19 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../assets/scss/partials/variables' as *;
+
 .jambotron {
     background-color: lightblue;
 
     .text_jambotron {
         padding: 4rem;
+
+        button {
+            &:hover {
+                background-color: $bgHooverBtn;
+            }
+        }
     }
 
     h1 {
