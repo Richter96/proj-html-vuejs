@@ -5,7 +5,21 @@ export default {
     name: 'AppHeader',
     data() {
         return {
+            activeEl: 0,
+            componentsNavbar: [
+                'home',
+                'About us',
+                'Feature',
+                'Testimonials',
+                'Contact US',
+            ],
 
+        }
+    },
+    methods: {
+        set_active(i) {
+            console.log('cliccato' + i);
+            this.activeEl = i
         }
     },
 }
@@ -16,16 +30,15 @@ export default {
     <div class="navbarContainer container-md d-flex align-items-center">
         <div>
             <a class="navbar-brand" href="#">
-                <img src="../assets/img/logo-2.png" alt="logo_Market" width="30">
+                <img src="../assets/img/logo-2.png" alt="logo_Market" width="40">
             </a>
         </div>
         <div class="d-flex align-items-baseline">
             <ul class="d-flex ">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Contact US</a></li>
+                <li @click="set_active(index)" v-for="(component, index) in componentsNavbar"><a
+                       :class="activeEl == index ? 'active' : ''" href="#">{{
+                           component }}</a></li>
+
             </ul>
             <button class=" bg-transparent border-0">
                 🔍
@@ -39,11 +52,20 @@ export default {
 <style lang="scss">
 @use '../assets/scss/partials/variables' as *;
 
+header {
+    background-color: $bgHeader;
+}
 
 .navbarContainer {
     justify-content: space-around;
     overflow: hidden;
     padding: 1rem;
+
+    button {
+        &:hover {
+            background-color: $bgHooverBtn;
+        }
+    }
 
     ul {
         list-style: none;
@@ -51,9 +73,15 @@ export default {
         a {
             color: $textNavbar;
             text-decoration: none;
-            padding-left: 1rem;
             border-bottom: 3px solid transparent;
-            padding: 1rem 1rem;
+            padding: 1rem 0;
+            margin: 0 1rem;
+
+            &.active {
+                color: $textPrimary;
+                border-bottom: 3px solid $textPrimary;
+
+            }
 
             &:hover {
                 border-bottom: 3px solid $textPrimary;
