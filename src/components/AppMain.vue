@@ -1,8 +1,12 @@
 <script>
+import AppJambotron from './AppJambotron.vue'
 
 
 export default {
     name: 'AppMain',
+    components: {
+        AppJambotron
+    },
     data() {
         return {
 
@@ -13,9 +17,7 @@ export default {
 
 <template>
     <div class=" container-md debug">
-        <div class="jambotron">
-            <span>jambotron</span>
-        </div>
+        <AppJambotron />
         <!-- option of marketing -->
         <section class="option_Market">
             <span>Section market</span>
@@ -39,12 +41,6 @@ export default {
 
 <style lang="scss">
 .debug {
-
-    .jambotron {
-        width: 100%;
-        height: 300px;
-        background-color: lightblue;
-    }
 
     .option_Market {
         width: 100%;
