@@ -112,18 +112,18 @@ export default {
             margin: 1rem;
         }
     }
-}
 
-button {
+    button {
 
-    padding: 0.5rem 1.5rem;
-    margin: 0rem 3rem;
+        padding: 0.5rem 1.5rem;
+        margin: 0rem 3rem;
 
-    &:hover {
-        background-color: $bgHooverBtn;
+        &:hover {
+            background-color: $bgHooverBtn;
+        }
     }
-
 }
+
 
 h2 {
     font-size: 2.5rem;
