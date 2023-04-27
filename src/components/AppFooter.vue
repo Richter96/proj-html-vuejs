@@ -48,6 +48,8 @@ export default {
                         </a>
                     </div>
                 </div>
+
+                <!-- contact area for mor info  -->
                 <div class="contact my-4">
                     <h3>Get in Touch</h3>
                     <div class="d-flex gap-4 my-4">
@@ -58,6 +60,7 @@ export default {
                         <input type="text" placeholder="Your Subject">
                         <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
                     </div>
+                    <button class="btn btn-primary">Send Message</button>
                 </div>
             </div>
         </div>
