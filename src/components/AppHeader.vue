@@ -41,7 +41,7 @@ export default {
 
             </ul>
             <button class=" bg-transparent border-0">
-                🔍
+                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
             </button>
             <button class="btn btn-primary"> Get Started</button>
         </div>
