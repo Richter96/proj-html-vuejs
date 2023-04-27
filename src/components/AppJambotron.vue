@@ -33,6 +33,8 @@ export default {
 .jambotron {
     background-color: $bgJambotron;
     padding-top: 2rem;
+    width: 1448px;
+    margin: auto;
 
     .text_jambotron {
         padding: 4rem;

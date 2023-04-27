@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <div class="container-md optionMarket">
+    <div class="optionMarket">
         <div class="row row-cols-4 d-flex justify-content-center">
             <div class="col">
                 <div class="card">

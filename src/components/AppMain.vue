@@ -1,13 +1,15 @@
 <script>
 import AppJambotron from './AppJambotron.vue'
 import OptionMArket from './OptionMarket.vue'
+import TricksSales from './TricksSales.vue'
 
 
 export default {
     name: 'AppMain',
     components: {
         AppJambotron,
-        OptionMArket
+        OptionMArket,
+        TricksSales
     },
     data() {
         return {
@@ -18,28 +20,33 @@ export default {
 </script>
 
 <template>
-    <div class=" container-md debug">
+    <div class=" container-flud debug">
         <AppJambotron />
         <!-- option of marketing -->
-        <OptionMArket />
-        <!-- setion Tricks -->
-        <section class="Tricks">
-            <span>Section Tricks</span>
-        </section>
-        <!-- section Popular features -->
-        <section class="Popular_features">
-            <span>Section Popular features</span>
-        </section>
-        <section class="Testimonials">
-            <span>Section Testimonials</span>
-        </section>
-        <section class="latest_posts">
-            <span>Section posts</span>
-        </section>
+        <div class="container_md">
+            <OptionMArket />
+            <!-- setion Tricks -->
+            <TricksSales />
+            <!-- section Popular features -->
+            <section class="Popular_features">
+                <span>Section Popular features</span>
+            </section>
+            <section class="Testimonials">
+                <span>Section Testimonials</span>
+            </section>
+            <section class="latest_posts">
+                <span>Section posts</span>
+            </section>
+        </div>
     </div>
 </template>
 
 <style lang="scss">
+.container_md {
+    width: 1178px;
+    margin: auto;
+}
+
 .debug {
 
     .option_Market {
