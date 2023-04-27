@@ -14,6 +14,7 @@ export default {
 <template>
     <div class="optionMarket">
         <div class="row row-cols-3 d-flex justify-content-center">
+            <!-- option -->
             <div class="col">
                 <div class="card">
                     <div class="card_img">
@@ -31,6 +32,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- other option -->
             <div class="col">
                 <div class="card">
                     <div class="card_img">
@@ -48,6 +50,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- other option -->
             <div class="col">
                 <div class="card">
                     <div class="card_img">
