@@ -3,6 +3,7 @@ import AppJambotron from './AppJambotron.vue'
 import OptionMArket from './OptionMarket.vue'
 import TricksSales from './TricksSales.vue'
 import PopularFeatures from './PopularFeatures.vue'
+import LatestPost from './LatestPost.vue'
 
 
 export default {
@@ -11,7 +12,8 @@ export default {
         AppJambotron,
         OptionMArket,
         TricksSales,
-        PopularFeatures
+        PopularFeatures,
+        LatestPost,
     },
     data() {
         return {
@@ -31,9 +33,7 @@ export default {
             <TricksSales />
             <!-- section Popular features -->
             <PopularFeatures />
-            <section class="Testimonials">
-                <span>Section Testimonials</span>
-            </section>
+            <LatestPost />
             <section class="latest_posts">
                 <span>Section posts</span>
             </section>

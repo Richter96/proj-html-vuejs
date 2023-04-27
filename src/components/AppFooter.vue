@@ -124,7 +124,6 @@ export default {
     input,
     textarea {
         border: 1px solid $borderLightGray;
-        color: $TextLightGray;
     }
 }
 
