@@ -12,8 +12,55 @@ export default {
 </script>
 
 <template>
-    <div class="footer_top">
-        <span>footer top</span>
+    <div class="footer_top container_md">
+        <div class="row">
+            <div class="contact_title col-12 text-center ">
+                <h3>Contact With our team</h3>
+                <span>If you are planning on developing a product landing.</span>
+            </div>
+            <div class="col">
+                <img src="../assets/img/StaticMapService.GetMapIma.png" alt="">
+            </div>
+            <div class="col">
+                <img src="../assets/img/35.png" alt="">
+                <span class=" d-block text-black fs-4 py-3"><strong>9840 Share St. Fond Du Lac, WI 54935</strong></span>
+                <span class=" d-block text-black-50 py-1">0 1223 458 789</span>
+                <span class=" d-block text-black-50 ">mali@softbox.com</span>
+                <div class="icones d-flex gap-2 mt-5">
+                    <div class="icone border border-1">
+                        <a href="#">
+                            <font-awesome-icon icon="fa-brands fa-facebook-f" />
+                        </a>
+                    </div>
+                    <div class="icone border border-1">
+                        <a href="#">
+                            <font-awesome-icon icon="fa-brands fa-twitter" />
+                        </a>
+                    </div>
+                    <div class="icone border border-1">
+                        <a href="#">
+                            <font-awesome-icon icon="fa-brands fa-github" />
+                        </a>
+                    </div>
+                    <div class="icone border border-1">
+                        <a href="#">
+                            <font-awesome-icon icon="fa-brands fa-instagram" />
+                        </a>
+                    </div>
+                </div>
+                <div class="contact my-4">
+                    <h3>Get in Touch</h3>
+                    <div class="d-flex gap-4 my-4">
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="d-flex flex-column gap-4">
+                        <input type="text" placeholder="Your Subject">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer_bottom">
         <span>footer bottom</span>
@@ -21,15 +68,30 @@ export default {
 </template>
 
 <style lang="scss">
-.footer_top {
-    width: 100%;
-    height: 300px;
-    background-color: rgba(88, 134, 146, 0.529);
+@use '../assets/scss/partials/variables' as *;
+
+.contact_title {
+    margin: 3rem 0;
 }
 
-.footer_bottom {
-    width: 100%;
-    height: 300px;
-    background-color: rgba(172, 93, 93, 0.466);
+.contact {
+    input {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        border: 1px solid $borderLightGray;
+        color: $TextLightGray;
+    }
+}
+
+.icone {
+    width: 2rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $borderLightGray;
 }
 </style>
