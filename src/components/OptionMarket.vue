@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div class="optionMarket">
-        <div class="row row-cols-4 d-flex justify-content-center">
+        <div class="row row-cols-3 d-flex justify-content-center">
             <div class="col">
                 <div class="card">
                     <div class="card_img">
@@ -91,7 +91,7 @@ export default {
         }
 
         .card_text {
-            padding: 0.5rem 0rem 0.5rem 2rem;
+            padding: 0.5rem 2.5rem 0.5rem 2rem;
 
             ul {
                 padding: 1rem 0;
@@ -99,6 +99,7 @@ export default {
 
                 li {
                     line-height: 2.5rem;
+                    font-weight: bold;
                 }
             }
         }
