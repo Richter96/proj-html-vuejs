@@ -4,6 +4,7 @@ import OptionMArket from './OptionMarket.vue'
 import TricksSales from './TricksSales.vue'
 import PopularFeatures from './PopularFeatures.vue'
 import LatestPost from './LatestPost.vue'
+import OurTestimonial from './OurTestimonial.vue'
 
 
 export default {
@@ -14,6 +15,7 @@ export default {
         TricksSales,
         PopularFeatures,
         LatestPost,
+        OurTestimonial,
     },
     data() {
         return {
@@ -24,26 +26,25 @@ export default {
 </script>
 
 <template>
-    <div class=" container-flud debug">
-        <AppJambotron />
-        <!-- option of marketing -->
-        <div class="container_md">
+    <main>
+        <div class=" container-flud">
+            <AppJambotron />
+            <!-- option of marketing -->
             <OptionMArket />
             <!-- setion Tricks -->
             <TricksSales />
             <!-- section Popular features -->
             <PopularFeatures />
+            <!-- section Testimonial -->
+            <OurTestimonial />
+            <!-- section post -->
             <LatestPost />
-            <section class="latest_posts">
-                <span>Section posts</span>
-            </section>
         </div>
-    </div>
+    </main>
 </template>
 
 <style lang="scss">
 @use '../assets/scss/partials/variables' as *;
-
 
 button {
     &:hover {
@@ -55,6 +56,15 @@ button {
     width: 1178px;
     margin: auto;
 }
+
+.card {
+    border-radius: 0;
+    border: 0;
+    padding: 1rem;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
 
 .debug {
 
