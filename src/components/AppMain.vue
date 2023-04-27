@@ -1,11 +1,13 @@
 <script>
 import AppJambotron from './AppJambotron.vue'
+import OptionMArket from './OptionMarket.vue'
 
 
 export default {
     name: 'AppMain',
     components: {
-        AppJambotron
+        AppJambotron,
+        OptionMArket
     },
     data() {
         return {
@@ -19,9 +21,7 @@ export default {
     <div class=" container-md debug">
         <AppJambotron />
         <!-- option of marketing -->
-        <section class="option_Market">
-            <span>Section market</span>
-        </section>
+        <OptionMArket />
         <!-- setion Tricks -->
         <section class="Tricks">
             <span>Section Tricks</span>
