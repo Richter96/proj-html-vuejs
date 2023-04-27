@@ -12,11 +12,13 @@ export default {
 </script>
 
 <template>
+    <!-- section trick sales -->
     <div class="TricksSales row row-cols-2">
         <div class="col_40 textTrick">
             <h2>Get tips tricks on how to skyrocket your sales.</h2>
             <span>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot
                 fanny!</span>
+
             <div class="card active">
                 <div class="card_img">
                     <img src="../assets/img/510.png" alt="">
@@ -27,6 +29,7 @@ export default {
                         when looking at its layout.</span>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card_img">
                     <img src="../assets/img/511.png" alt="">
@@ -43,6 +46,10 @@ export default {
         </div>
     </div>
 </template>
+
+
+
+
 
 <style lang="scss">
 @use '../assets/scss/partials/variables' as *;
