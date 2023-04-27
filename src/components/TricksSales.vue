@@ -13,7 +13,7 @@ export default {
 
 <template>
     <!-- section trick sales -->
-    <div class="TricksSales row row-cols-2">
+    <div class="TricksSales container_md row row-cols-2">
         <div class="col_40 textTrick">
             <h2>Get tips tricks on how to skyrocket your sales.</h2>
             <span>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot
@@ -51,54 +51,55 @@ export default {
 
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-h2 {
-    padding-right: 2rem;
-    font-size: 2.5rem;
-}
+.TricksSales {
 
-.col_40 {
-    width: 45%;
-}
+    margin: 3rem auto;
 
-span {
-    font-size: 0.8rem;
-    color: $TextGray;
-}
 
-.card {
-    border-radius: 0;
-    border: 0;
-    padding: 1rem;
-    flex-direction: row;
-    margin: 2rem 0;
-
-    &:hover {
-        box-shadow: 9px 8px 23px 0px #888888;
+    h2 {
+        padding-right: 2rem;
+        font-size: 2.5rem;
     }
 
+    .col_40 {
+        width: 45%;
+    }
 
-    .card_img {
-        img {
-            width: 4rem;
-            padding: 1rem 0;
+    span {
+        font-size: 0.8rem;
+        color: $TextGray;
+    }
+
+    .card {
+
+        &:hover {
+            box-shadow: 9px 8px 23px 0px #888888;
         }
-    }
 
-    .card_text {
-        padding: 0.5rem;
 
-        ul {
-            padding: 1rem 0;
-            list-style: none;
-
-            li {
-                line-height: 2.5rem;
+        .card_img {
+            img {
+                width: 4rem;
+                padding: 1rem 0;
             }
         }
-    }
 
+        .card_text {
+            padding: 0.5rem;
+
+            ul {
+                padding: 1rem 0;
+                list-style: none;
+
+                li {
+                    line-height: 2.5rem;
+                }
+            }
+        }
+
+    }
 }
 </style>

@@ -13,47 +13,49 @@ export default {
 
 <template>
     <div class="latestPost text-center my-5">
+        <div class="container_md">
+            <h2>Latest Posts</h2>
+            <span>If you are planning on developing a product landing.</span>
 
-        <h2>Latest Posts</h2>
-        <span>If you are planning on developing a product landing.</span>
-
-        <div class="posts row row-cols-3">
-            <div class="col">
-                <div class="card_post position-relative flex-column">
-                    <span class="badge fw-light">November 28, 2019</span>
-                    <img src="../assets/img/19.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title py-1 mt-3">Life Lack Meaning</h5>
-                        <p class="card-text py-1">It is a long established fact that a reader will be distracted by the
-                            readable.</p>
+            <div class="posts row row-cols-3">
+                <div class="col">
+                    <div class="card_post position-relative flex-column">
+                        <span class="badge fw-light">November 28, 2019</span>
+                        <img src="../assets/img/19.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title py-1 mt-3">Life Lack Meaning</h5>
+                            <p class="card-text py-1">It is a long established fact that a reader will be distracted by the
+                                readable.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card_post position-relative flex-column">
-                    <span class="badge fw-light">November 28, 2019</span>
-                    <img src="../assets/img/18.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title py-1 mt-3">Life Lack Meaning</h5>
-                        <p class="card-text py-1">It is a long established fact that a reader will be distracted by the
-                            readable.</p>
+                <div class="col">
+                    <div class="card_post position-relative flex-column">
+                        <span class="badge fw-light">November 28, 2019</span>
+                        <img src="../assets/img/18.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title py-1 mt-3">Life Lack Meaning</h5>
+                            <p class="card-text py-1">It is a long established fact that a reader will be distracted by the
+                                readable.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card_post position-relative flex-column">
-                    <span class="badge fw-light">November 28, 2019</span>
-                    <img src="../assets/img/17.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title py-1 mt-3">Life Lack Meaning</h5>
-                        <p class="card-text py-1">It is a long established fact that a reader will be distracted by the
-                            readable.</p>
+                <div class="col">
+                    <div class="card_post position-relative flex-column">
+                        <span class="badge fw-light">November 28, 2019</span>
+                        <img src="../assets/img/17.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title py-1 mt-3">Life Lack Meaning</h5>
+                            <p class="card-text py-1">It is a long established fact that a reader will be distracted by the
+                                readable.</p>
 
+                        </div>
                     </div>
                 </div>
+                <div class="col"></div>
+                <div class="col"></div>
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
+
         </div>
     </div>
 </template>
@@ -64,6 +66,8 @@ export default {
 
 <style lang="scss">
 @use '../assets/scss/partials/variables' as *;
+
+
 
 .posts {
     margin-top: 4rem;

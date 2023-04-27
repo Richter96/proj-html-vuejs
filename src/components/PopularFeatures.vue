@@ -12,7 +12,9 @@ export default {
 </script>
 
 <template>
-    <div class="popularFeatures row row-cols-2">
+    <div class="popularFeatures container_md row row-cols-2 position-relative">
+
+        <img class="circle position-absolute" src="../assets/img/14.png" alt="">
         <div class="col-12 d-flex justify-content-between align-items-baseline">
             <div>
                 <h2>Popular features that your business needs</h2>
@@ -82,7 +84,14 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .popularFeatures {
-    margin-top: 4rem;
+
+    .circle {
+        top: 0;
+        left: -40rem;
+    }
+
+    margin: 4rem auto !important;
+
 
     .card {
         box-shadow: 0px 0px 71px -17px #818181;
@@ -97,7 +106,6 @@ export default {
         }
 
         &:hover img {
-
             filter: invert(1);
             filter: saturate(0);
         }
@@ -114,7 +122,6 @@ export default {
     }
 
     button {
-
         padding: 0.5rem 1.5rem;
         margin: 0rem 3rem;
 
