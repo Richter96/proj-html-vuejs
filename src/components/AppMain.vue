@@ -42,6 +42,15 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../assets/scss/partials/variables' as *;
+
+
+button {
+    &:hover {
+        background-color: $bgHooverBtn !important;
+    }
+}
+
 .container_md {
     width: 1178px;
     margin: auto;
