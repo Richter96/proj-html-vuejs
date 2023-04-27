@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div class="jambotron d-flex">
-        <div class="text_jambotron">
+        <div class="col_40 text_jambotron">
             <h1>The biggest platform for your growth.</h1>
             <p>There are many varlations of passages of Lorem Ipsum available, but the majority have suffered alteration in
                 some form</p>
@@ -22,7 +22,7 @@ export default {
 
         </div>
         <div class="col_60">
-            <img src="../assets/img/508.jpeg" alt="">
+            <img src="../assets/img/27-1.png" alt="">
         </div>
     </div>
 </template>
@@ -31,7 +31,8 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .jambotron {
-    background-color: lightblue;
+    background-color: $bgJambotron;
+    padding-top: 2rem;
 
     .text_jambotron {
         padding: 4rem;
@@ -47,14 +48,14 @@ export default {
         font-size: 3rem;
     }
 
-    .col_60 {
-        width: 605;
+    .col_40 {
+        width: 45%;
     }
 
 
     img {
         width: 100%;
-        margin-bottom: -10%;
+        margin-bottom: -5%;
     }
 }
 </style>
