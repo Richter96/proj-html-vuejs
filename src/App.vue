@@ -20,4 +20,8 @@ export default {
   <AppFooter />
 </template>
 
-<style scoped></style>
+<style >
+body {
+  font-family: 'Outfit', sans-serif;
+}
+</style>

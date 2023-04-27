@@ -60,13 +60,52 @@ export default {
                         <input type="text" placeholder="Your Subject">
                         <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
                     </div>
-                    <button class="btn btn-primary">Send Message</button>
+                    <button class="btn btn-primary py-2 my-3">Send Message</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer_bottom">
-        <span>footer bottom</span>
+    <div class="footer_bottom border-top">
+        <div class="container_md my-5">
+            <div class="row row-cols-4 justify-content-between">
+                <div class="col">
+                    <img src="../assets/img/35.png" alt="">
+                    <p class=" mb-5">It is a long established fact that a reader will be distracted by the readable content
+                    </p>
+                    <span>Copyright &copy; 2018 <a class=" text-decoration-none text-primary" href="">Softbox</a> </span>
+                </div>
+                <div class="col">
+                    <h5><strong>Menu</strong></h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Theme</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5><strong>About Us</strong></h5>
+                    <ul>
+                        <li><a href="#">About Softbox</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                        <li><a href="#">How it Work</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5><strong>Quicj Links</strong></h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Theme</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -85,6 +124,20 @@ export default {
     input,
     textarea {
         border: 1px solid $borderLightGray;
+        color: $TextLightGray;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+        line-height: 1.9rem;
+    }
+
+    a {
+        text-decoration: none;
         color: $TextLightGray;
     }
 }

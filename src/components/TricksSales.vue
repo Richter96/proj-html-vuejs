@@ -19,7 +19,7 @@ export default {
             <span>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot
                 fanny!</span>
 
-            <div class="card active">
+            <div class="card">
                 <div class="card_img">
                     <img src="../assets/img/510.png" alt="">
                 </div>
@@ -75,7 +75,7 @@ span {
     flex-direction: row;
     margin: 2rem 0;
 
-    &.active {
+    &:hover {
         box-shadow: 9px 8px 23px 0px #888888;
     }
 
