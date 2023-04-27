@@ -20,8 +20,21 @@ export default {
   <AppFooter />
 </template>
 
-<style >
+<style lang="scss">
+@use './assets/scss/partials/variables' as *;
+
 body {
   font-family: 'Outfit', sans-serif;
+}
+
+button {
+  &:hover {
+    background-color: $bgHooverBtn !important;
+  }
+}
+
+.container_md {
+  width: 1178px;
+  margin: auto;
 }
 </style>
