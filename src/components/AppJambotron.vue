@@ -35,6 +35,7 @@ export default {
     padding-top: 2rem;
     width: 1448px;
     margin: auto;
+    margin-top: 4rem;
 
     .text_jambotron {
         padding: 4rem;

@@ -27,26 +27,28 @@ export default {
 
 <template>
     <!-- navbar with logo and link  -->
-    <div class="navbarContainer container-md d-flex align-items-center">
-        <div>
-            <a class="navbar-brand" href="#">
-                <img src="../assets/img/logo-2.png" alt="logo_Market" width="40">
-            </a>
-        </div>
-        <div class="d-flex align-items-baseline">
-            <ul class="d-flex ">
-                <li @click="set_active(index)" v-for="(component, index) in componentsNavbar"><a
-                       :class="activeEl == index ? 'active' : ''" href="#">{{
-                           component }}</a></li>
+    <header>
+        <div class="navbarContainer container-md d-flex align-items-center">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/img/logo-2.png" alt="logo_Market" width="40">
+                </a>
+            </div>
+            <div class="d-flex align-items-baseline">
+                <ul class="d-flex ">
+                    <li @click="set_active(index)" v-for="(component, index) in componentsNavbar"><a
+                           :class="activeEl == index ? 'active' : ''" href="#">{{
+                               component }}</a></li>
 
-            </ul>
-            <button class=" bg-transparent border-0">
-                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-            </button>
-            <button class="btn btn-primary"> Get Started</button>
-        </div>
+                </ul>
+                <button class=" bg-transparent border-0">
+                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                </button>
+                <button class="btn btn-primary"> Get Started</button>
+            </div>
 
-    </div>
+        </div>
+    </header>
 </template>
 
 <style lang="scss">
@@ -54,6 +56,12 @@ export default {
 
 header {
     background-color: $bgHeader;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 5px var(--db-grey-txt);
+    z-index: 1;
 }
 
 .navbarContainer {
