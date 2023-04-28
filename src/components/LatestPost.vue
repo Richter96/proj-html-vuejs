@@ -78,6 +78,10 @@ export default {
     padding: 0.5rem;
     border: 0.5px solid $borderLightGray;
 
+    &:hover {
+        box-shadow: 9px 8px 23px 0px #888888;
+    }
+
     .card-body {
         padding: 1rem;
         padding-right: 4rem;

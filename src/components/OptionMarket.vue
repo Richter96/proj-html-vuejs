@@ -88,6 +88,10 @@ export default {
         padding: 1rem 0rem;
         flex-direction: row;
 
+        &:hover {
+            box-shadow: 9px 8px 23px 0px #888888;
+        }
+
         .card_img {
             img {
                 width: 4rem;
