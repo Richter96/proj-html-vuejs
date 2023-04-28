@@ -6,6 +6,32 @@ export default {
     data() {
         return {
 
+            Testimonials: [
+                {
+                    name: 'Julia Aann',
+                    imageProfile: '26.jpeg',
+                    workRole: 'coo Softbox',
+                    description: ' At vero eos et accusamus et lusto odio dignissimos ducimus qui blanditiis proesentium vero eos et consectetur accus adip adio.'
+                },
+                {
+                    name: 'Mac Znder',
+                    imageProfile: '27.jpeg',
+                    workRole: 'Manager Softbox',
+                    description: ' At vero eos et accusamus et lusto odio dignissimos ducimus qui blanditiis proesentium vero eos et consectetur accus adip adio.'
+                },
+                {
+                    name: 'Jacob Sing',
+                    imageProfile: '25.jpeg',
+                    workRole: 'design Artist ',
+                    description: ' At vero eos et accusamus et lusto odio dignissimos ducimus qui blanditiis proesentium vero eos et consectetur accus adip adio.'
+                }
+            ]
+
+        }
+    },
+    methods: {
+        getImagePath(imgPath) {
+            return new URL(imgPath, import.meta.url).href;
         }
     },
 }
@@ -20,47 +46,26 @@ export default {
 
             <div class="row justify-content-center">
                 <div class="col-6 text-center">
-                    <h2>Our Testimonials</h2>
-                    <span>If you are planning on developing a product landing app or website, take a look at this
+                    <h2 class="testimonialTitle">Our Testimonials</h2>
+                    <span class="testimonialSubtitle">If you are planning on developing a product landing app or website,
+                        take a look at this
                         beautiful-crafted</span>
                 </div>
                 <div class="col-12">
                     <div class="row">
-                        <div class="col">
+                        <div class="col" v-for="(testimonial, index) in  Testimonials ">
+                            <!-- testimonial card -->
                             <div class="card flex-column align-items-center ">
-                                <div class="card-img profile_circle">
-                                    <img src="../assets/img/26.jpeg" alt="">
+                                <div class=" img-fluid profile_circle">
+                                    <img :src="getImagePath(`../assets/img/${testimonial.imageProfile}`)" alt="">
                                 </div>
                                 <div class="card-body d-flex flex-column">
                                     <div class="text-center card-title">
-                                        <span><strong>Julia Aann</strong> - coo Softbox</span>
+                                        <span><strong>{{ testimonial.name }}</strong> - {{ testimonial.workRole }}</span>
                                     </div>
                                     <div class=" card-text">
                                         <p>
-                                            At vero eos et accusamus et lusto odio dignissimos ducimus qui blanditiis
-                                            proesentium
-                                            vero eos et consectetur
-                                            accus adip adio.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card flex-column align-items-center">
-                                <div class="card-img profile_circle">
-                                    <img src="../assets/img/26.jpeg" alt="">
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <div class="text-center card-title">
-                                        <span><strong>Julia Aann</strong> - coo Softbox</span>
-                                    </div>
-                                    <div class=" card-text">
-                                        <p>
-                                            At vero eos et accusamus et lusto odio dignissimos ducimus qui blanditiis
-                                            proesentium
-                                            vero eos et consectetur
-                                            accus adip adio.
+                                            {{ testimonial.description }}
                                         </p>
                                     </div>
                                 </div>
@@ -106,6 +111,7 @@ export default {
 
         img {
             max-width: 100%;
+            aspect-ratio: 1;
             position: relative;
             z-index: 0;
             border-radius: 50%;
