@@ -5,7 +5,7 @@ export default {
     name: 'OurTestimonial',
     data() {
         return {
-
+            activeTestimonial: 0,
             Testimonials: [
                 {
                     name: 'Julia Aann',
@@ -53,9 +53,11 @@ export default {
                 </div>
                 <div class="col-12">
                     <div class="row">
-                        <div class="col" v-for="(testimonial, index) in  Testimonials ">
+                        <div class="col"
+                             :class="index === activeTestimonial || index === activeTestimonial + 1 ? 'active' : ''"
+                             v-for="(testimonial, index) in  Testimonials ">
                             <!-- testimonial card -->
-                            <div class="card flex-column align-items-center ">
+                            <div class="card flex-column align-items-center">
                                 <div class=" img-fluid profile_circle">
                                     <img :src="getImagePath(`../assets/img/${testimonial.imageProfile}`)" alt="">
                                 </div>
@@ -97,9 +99,18 @@ export default {
 
     }
 
-    .card {
-        box-shadow: 0px 0px 10px 0px #BBBBBB;
+    .col {
+        &:not(.active) {
+            display: none;
+        }
+
+        .card {
+            box-shadow: 0px 0px 10px 0px #BBBBBB;
+
+        }
+
     }
+
 
     .profile_circle {
         width: 100px;
