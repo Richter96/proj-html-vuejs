@@ -13,7 +13,6 @@ export default {
                 'Testimonials',
                 'Contact US',
             ],
-
         }
     },
     methods: {
@@ -39,7 +38,6 @@ export default {
                     <li @click="set_active(index)" v-for="(component, index) in componentsNavbar"><a
                            :class="activeEl == index ? 'active' : ''" href="#">{{
                                component }}</a></li>
-
                 </ul>
                 <button class=" bg-transparent border-0">
                     <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
