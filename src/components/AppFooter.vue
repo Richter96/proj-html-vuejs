@@ -5,6 +5,27 @@ export default {
     name: 'AppFooter',
     data() {
         return {
+            linksMenu: [
+                'About Us',
+                'Theme',
+                'Feature',
+                'Pricing',
+                'Blog',
+            ],
+            QuicLinks: [
+                'About Us',
+                'Theme',
+                'Feature',
+                'Pricing',
+                'Blog',
+            ],
+            linksAboutUs: [
+                'About Softbox',
+                'Roadmap',
+                'How it Work',
+                'Team',
+                'News',
+            ]
 
         }
     },
@@ -80,31 +101,20 @@ export default {
                     <div class="col">
                         <h5><strong>Menu</strong></h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Theme</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li v-for="link in linksMenu"><a href="#">{{ link }}</a></li>
+
                         </ul>
                     </div>
                     <div class="col">
                         <h5><strong>About Us</strong></h5>
                         <ul>
-                            <li><a href="#">About Softbox</a></li>
-                            <li><a href="#">Roadmap</a></li>
-                            <li><a href="#">How it Work</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">News</a></li>
+                            <li v-for="link in linksAboutUs"><a href="#">{{ link }}</a></li>
                         </ul>
                     </div>
                     <div class="col">
-                        <h5><strong>Quicj Links</strong></h5>
+                        <h5><strong>Quic Links</strong></h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Theme</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li v-for="link in QuicLinks"><a href="#">{{ link }}</a></li>
                         </ul>
                     </div>
                 </div>
