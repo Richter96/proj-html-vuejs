@@ -17,7 +17,8 @@
     "@googlemaps/js-api-loader": "^1.15.1",
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue3-carousel": "^0.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

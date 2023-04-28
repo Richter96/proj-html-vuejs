@@ -1,8 +1,11 @@
 <script>
-
+import SliderVue from './SliderVue.vue'
 
 export default {
     name: 'OurTestimonial',
+    components: {
+        SliderVue
+    },
     data() {
         return {
             activeTestimonial: 0,
@@ -43,7 +46,6 @@ export default {
             <img class=" mw-100" src="../assets/img/15.png" alt="">
         </div>
         <div class="container_md">
-
             <div class="row justify-content-center">
                 <div class="col-6 text-center">
                     <h2 class="testimonialTitle">Our Testimonials</h2>
@@ -52,11 +54,12 @@ export default {
                         beautiful-crafted</span>
                 </div>
                 <div class="col-12">
-                    <div class="row">
+                    <SliderVue />
+                    <!-- <div class="row">
                         <div class="col"
                              :class="index === activeTestimonial || index === activeTestimonial + 1 ? 'active' : ''"
                              v-for="(testimonial, index) in  Testimonials ">
-                            <!-- testimonial card -->
+
                             <div class="card flex-column align-items-center">
                                 <div class=" img-fluid profile_circle">
                                     <img :src="getImagePath(`../assets/img/${testimonial.imageProfile}`)" alt="">
@@ -73,7 +76,7 @@ export default {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -99,15 +102,9 @@ export default {
 
     }
 
-    .col {
-        &:not(.active) {
-            display: none;
-        }
-
-        .card {
-            box-shadow: 0px 0px 10px 0px #BBBBBB;
-
-        }
+    .card {
+        box-shadow: 0px 0px 10px 0px #BBBBBB;
+        margin: 2rem 2rem;
 
     }
 
