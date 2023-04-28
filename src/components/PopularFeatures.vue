@@ -5,7 +5,58 @@ export default {
     name: 'PopularFeatures',
     data() {
         return {
+            Features: [
+                {
+                    name: 'customized Invoice',
+                    image: 'invoice.png',
+                    bgcolor: '#377DFF'
+                },
+                {
+                    name: 'Stock Management',
+                    image: 'airplane.png',
+                    bgcolor: '#FF796D'
+                },
+                {
+                    name: 'Receivable & Payables',
+                    image: 'profile.png',
+                    bgcolor: '#6CDAC1'
+                },
+                {
+                    name: 'Manage Buying',
+                    image: 'manage.png',
+                    bgcolor: '#377DFF'
+                },
+                {
+                    name: ' Powerful & Secure',
+                    image: 'secure.png',
+                    bgcolor: '#FF796D'
+                },
+                {
+                    name: 'Fastest Return Filling',
+                    image: 'profile.png',
+                    bgcolor: '#6CDAC1'
+                },
+                {
+                    name: 'Monthly Detailed',
+                    image: 'detailed.png',
+                    bgcolor: '#377DFF'
+                },
+                {
+                    name: 'Product Management',
+                    image: 'product_management.png',
+                    bgcolor: '#FF796D'
+                },
+            ]
 
+        }
+    },
+    methods: {
+        getImagePath(imgPath) {
+            return new URL(imgPath, import.meta.url).href;
+        },
+        changeBackground(event, color) {
+            console.log(color);
+            event.target.style.backgroundColor = color
         }
     },
 }
@@ -27,52 +78,11 @@ export default {
         </div>
         <div class="col-12">
             <div class="row row-cols-4">
-                <div class="col">
-                    <div class="card flex-column">
-                        <h5>Customized Invoices</h5>
-                        <img src="../assets/img/invoice.png" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card flex-column">
-                        <h5>Customized Invoices</h5>
-                        <img src="../assets/img/invoice.png" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card flex-column">
-                        <h5>Customized Invoices</h5>
-                        <img src="../assets/img/invoice.png" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card flex-column">
-                        <h5>Customized Invoices</h5>
-                        <img src="../assets/img/invoice.png" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card flex-column">
-                        <h5>Customized Invoices</h5>
-                        <img src="../assets/img/invoice.png" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card flex-column">
-                        <h5>Customized Invoices</h5>
-                        <img src="../assets/img/invoice.png" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card flex-column">
-                        <h5>Customized Invoices</h5>
-                        <img src="../assets/img/invoice.png" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card flex-column">
-                        <h5>Customized Invoices</h5>
-                        <img src="../assets/img/invoice.png" alt="">
+                <div class="col" v-for="feature in Features">
+                    <div class="card flex-column" @mouseenter="changeBackground($event, feature.bgcolor)"
+                         @mouseleave="changeBackground($event, 'white')">
+                        <h5>{{ feature.name }}</h5>
+                        <img :src="getImagePath(`../assets/img/icon_features/${feature.image}`)" alt="">
                     </div>
                 </div>
             </div>
@@ -97,9 +107,7 @@ export default {
         box-shadow: 0px 0px 71px -17px #818181;
         aspect-ratio: 2/1;
 
-        &:hover {
-            background-color: $bgPrimary;
-        }
+
 
         &:hover h5 {
             color: $TextOverFeatures;

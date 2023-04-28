@@ -103,6 +103,10 @@ export default {
 <style lang="scss" >
 @use '../assets/scss/partials/variables' as *;
 
+.carousel {
+    margin: 3rem 0;
+}
+
 .slide {
     width: calc(100% / 2) !important;
 }

@@ -33,9 +33,7 @@ export default {
         }
     },
     methods: {
-        getImagePath(imgPath) {
-            return new URL(imgPath, import.meta.url).href;
-        }
+
     },
 }
 </script>
@@ -96,6 +94,11 @@ export default {
     width: 100%;
     background-color: $bgTestimonial;
     background: linear-gradient(180deg, rgb(240, 247, 255) 70%, rgba(255, 255, 255, 1) 100%);
+
+    .testimonialTitle {
+        margin-bottom: 2rem;
+
+    }
 
     .container_md {
         margin-top: -6rem;
