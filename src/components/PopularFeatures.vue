@@ -132,10 +132,6 @@ export default {
     button {
         padding: 0.5rem 1.5rem;
         margin: 0rem 3rem;
-
-        &:hover {
-            background-color: $bgHooverBtn;
-        }
     }
 }
 

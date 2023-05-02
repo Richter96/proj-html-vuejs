@@ -11,11 +11,16 @@ export default {
 }
 </script>
 
+
+<!-- different type of marketing on line -->
 <template>
     <div class="container_md">
         <div class="optionMarket">
             <div class="row row-cols-3 d-flex justify-content-center">
-                <!-- option -->
+
+
+
+                <!--first option -->
                 <div class="col">
                     <div class="card">
                         <div class="card_img">
@@ -33,6 +38,9 @@ export default {
                         </div>
                     </div>
                 </div>
+
+
+
                 <!-- other option -->
                 <div class="col">
                     <div class="card">
@@ -51,6 +59,9 @@ export default {
                         </div>
                     </div>
                 </div>
+
+
+
                 <!-- other option -->
                 <div class="col">
                     <div class="card">
@@ -75,6 +86,12 @@ export default {
         </div>
     </div>
 </template>
+
+
+
+
+
+
 
 <style lang="scss">
 @use '../assets/scss/partials/variables' as *;

@@ -46,7 +46,7 @@ export default {
 <style lang="scss">
 @use '../assets/scss/partials/variables' as *;
 
-button {
+button .over_black {
     &:hover {
         background-color: $bgHooverBtn !important;
     }

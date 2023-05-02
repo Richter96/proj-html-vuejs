@@ -19,6 +19,7 @@ export default {
             <span>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot
                 fanny!</span>
 
+            <!-- card withe trick -->
             <div class="card">
                 <div class="card_img">
                     <img src="../assets/img/510.png" alt="">
@@ -30,6 +31,7 @@ export default {
                 </div>
             </div>
 
+            <!-- card withe trick -->
             <div class="card">
                 <div class="card_img">
                     <img src="../assets/img/511.png" alt="">

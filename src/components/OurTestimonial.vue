@@ -51,8 +51,15 @@ export default {
                         take a look at this
                         beautiful-crafted</span>
                 </div>
+
+
                 <div class="col-12">
+
+                    <!-- slider vue, install npm slider vue -->
                     <SliderVue />
+
+
+
                     <!-- <div class="row">
                         <div class="col"
                              :class="index === activeTestimonial || index === activeTestimonial + 1 ? 'active' : ''"

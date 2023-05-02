@@ -15,8 +15,13 @@ export default {
 </script>
 
 <template>
+  <!-- header with logo, nav bar menu, serch and button get started -->
   <AppHeader />
+
+  <!-- hearth of the site, different section of site -->
   <AppMain />
+
+  <!-- footer with contact with teams -->
   <AppFooter />
 </template>
 

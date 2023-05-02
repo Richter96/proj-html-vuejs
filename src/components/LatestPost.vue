@@ -5,12 +5,22 @@ export default {
     name: 'LatestPost',
     data() {
         return {
+            posts: [
+                {
+                    title: '',
+                    data: '',
+                    description: '',
+                    image: '',
+                }
+            ]
 
         }
     },
 }
 </script>
 
+
+<!-- area with different new posts -->
 <template>
     <div class="latestPost text-center my-5">
         <div class="container_md">
@@ -18,6 +28,8 @@ export default {
             <span>If you are planning on developing a product landing.</span>
 
             <div class="posts row row-cols-3">
+
+                <!-- post -->
                 <div class="col">
                     <div class="card_post position-relative flex-column">
                         <span class="badge fw-light">November 28, 2019</span>
@@ -29,6 +41,8 @@ export default {
                         </div>
                     </div>
                 </div>
+
+                <!-- post -->
                 <div class="col">
                     <div class="card_post position-relative flex-column">
                         <span class="badge fw-light">November 28, 2019</span>
@@ -40,6 +54,8 @@ export default {
                         </div>
                     </div>
                 </div>
+
+                <!-- post -->
                 <div class="col">
                     <div class="card_post position-relative flex-column">
                         <span class="badge fw-light">November 28, 2019</span>
@@ -52,8 +68,6 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col"></div>
-                <div class="col"></div>
             </div>
 
         </div>
