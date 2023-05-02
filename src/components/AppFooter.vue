@@ -36,7 +36,7 @@ export default {
     <footer>
 
         <!-- FOOTER TOP the map of input for contact teams-->
-        <div class="footer_top container_md">
+        <div class="footer_top container_md" id="Contact_our">
             <div class="row">
                 <div class="contact_title col-12 text-center ">
                     <h3>Contact With our team</h3>

@@ -12,5 +12,5 @@ import * as bootstrap from 'bootstrap'
 
 library.add(faMagnifyingGlass, faFacebookF, faTwitter, faGithub, faInstagram, faAngleUp)
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+createApp(App).component('font-awesome-icon', FontAwesomeIcon, bootstrap).mount('#app')
 
